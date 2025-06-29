@@ -33,3 +33,24 @@ function handlePostClick(id) {
       `;
     });
 }
+// used for adding data
+function addNewPostListener() {
+  const form = document.querySelector("#new-post");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const title = document.getElementById("new-title").value;
+    const content = document.getElementById("new-content").value;
+    const author = document.getElementById("new-author").value;
+
+    fetch("http://localhost:3000/posts", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ title, content, author })
+    })
+      .then(res => res.json())
+      .then(newPost => {
+        displayPosts(); // Refresh the post list
+        form.reset();   // Clear the form
+      });
+  });
+}
