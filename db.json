@@ -1,84 +1,22 @@
-<html>
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-      crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css" />
-    <title>JSON Server</title>
-  </head>
-
-  <body>
-    <header>
-      <div class="container">
-        <nav>
-          <ul>
-            <li class="title">
-              JSON Server
-            </li>
-            <li>
-              <a href="https://github.com/users/typicode/sponsorship">
-                <i class="fas fa-heart"></i>GitHub Sponsors
-              </a>
-            </li>
-            <li>
-              <a href="https://my-json-server.typicode.com">
-                <i class="fas fa-burn"></i>My JSON Server
-              </a>
-            </li>
-            <li>
-              <a href="https://thanks.typicode.com">
-                <i class="far fa-laugh"></i>Supporters
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <div class="container">
-        <h1>Congrats!</h1>
-        <p>
-          You're successfully running JSON Server
-          <br />
-          ✧*｡٩(ˊᗜˋ*)و✧*｡
-        </p>
-
-        <div id="resources"></div>
-
-        <p>
-          To access and modify resources, you can use any HTTP method:
-        </p>
-        <p>
-          <code>GET</code>
-          <code>POST</code>
-          <code>PUT</code>
-          <code>PATCH</code>
-          <code>DELETE</code>
-          <code>OPTIONS</code>
-        </p>
-
-        <div id="custom-routes"></div>
-
-        <h1>Documentation</h1>
-        <p>
-          <a href="https://github.com/typicode/json-server">
-            README
-          </a>
-        </p>
-      </div>
-    </main>
-
-    <footer>
-      <div class="container">
-        <p>
-          To replace this page, create a
-          <code>./public/index.html</code> file.
-        </p>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
-</html>
+{
+  "posts": [
+    {
+      "title": "Html",
+      "content": "Http- hyper text transfer protocol.(!secured).\nHttps- (secured)\n!- displays the initial html structure.\n(h1-h6)-they dicrease  as they incriment with the value.\np- stands for paragraph.\nem- emphasises on a spesific data.\nspam- outlines a specific text for individual formart.\n\na- anchor tag used for linking files with online sites.",
+      "author": "html pro p",
+      "id": 8
+    },
+    {
+      "title": "Horror in Kenya",
+      "content": "The president of Kenya, hon William Ruto, orders the media to stop live broadcasting of the ongoing protests in 25 June 2025. This might seem as a small matter but its actually very serious. This action left many questions among the citizens of why this was essential but many did get their answers. This is because during the none media broadcast,most of the Gen Z protesters were mercilessly killed by snipers positioned and given direct order by the president to kill as many as possible. This protests were to commemorate the fallen soldiers from last years 'Reject finance bill' protests but now it has led to more life loss.The war is still continuing, stay tuned for more update. ",
+      "author": "Kenyan Gosip",
+      "id": 9
+    },
+    {
+      "title": "third post",
+      "content": "iuiugas",
+      "author": "royvdebv",
+      "id": 10
+    }
+  ]
+}
