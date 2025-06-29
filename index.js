@@ -20,4 +20,16 @@ function displayPosts() {
     });
 
 }
-   
+    // takes the posts id which is its unique idenifire
+function handlePostClick(id) {
+  fetch(`http://localhost:3000/posts/${id}`)
+    .then(res => res.json())
+    .then(post => {
+      const detailDiv = document.getElementById("post-detail");
+      detailDiv.innerHTML = `
+        <h2>${post.title}</h2>
+        <p>${post.content}</p>
+        <p><strong>Author:</strong> ${post.author}</p>
+      `;
+    });
+}
