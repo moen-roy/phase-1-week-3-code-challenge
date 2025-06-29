@@ -1,7 +1,11 @@
 body{ 
+    color: #000;
     font-size: larger;
     background: rgb(3, 22, 75);
     font-weight: bolder;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-image: url("https://png.pngtree.com/background/20210715/original/pngtree-copy-space-purple-circuits-digital-background-picture-image_1310627.jpg");
 }
 h1{
@@ -9,6 +13,11 @@ h1{
     max-width: 300px;  
     text-align: center;
     background:rgba(245, 222, 179, 0.548);
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 2rem;
+
 }
 div{
     background-color: rgba(0, 0, 0, 0.514);
@@ -22,6 +31,7 @@ div{
 .text:hover{
     color: wheat;
     text-decoration-line: underline;
+    cursor: pointer;
 }
 #new-post{
     background-color:rgba(145, 127, 127, 0.349);
@@ -51,6 +61,12 @@ div{
     border-radius: 15px;
     background-color: red;
 }
+#submit:hover {
+  background-color: darkred;
+  cursor: pointer;
+  color: white;
+}
+
 #new-content::placeholder{
     color: rgba(0, 0, 0, 0.822);
     font-size:larger;
@@ -63,3 +79,17 @@ div{
     color: rgba(0, 0, 0, 0.822);
     font-size:medium;
 }
+form#new-post {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: 2rem auto;
+  width: fit-content;
+  border-radius: 10px;
+}
+#new-post input,
+#new-post textarea,
+#new-post button {
+  margin-left: 20px;
+}
+
