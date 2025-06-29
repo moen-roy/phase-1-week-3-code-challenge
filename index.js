@@ -12,8 +12,11 @@ function displayPosts() {
       const postList = document.getElementById("posts-list");
         // clear list first before new entry
         posts.forEach(post => {
-        const postElement = document.createElement("div");
-        postElement.textContent = post.title;
+         const postElement = document.createElement("div");
+        //  adding a class
+        postElement.classList.add("text");
+        
+         postElement.textContent = post.title;
         postElement.addEventListener("click", () => handlePostClick(post.id));    // hoisting of function
         postList.appendChild(postElement);
       });
